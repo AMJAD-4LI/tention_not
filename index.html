@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="1st Year Result Pakistan - 100+ hilarious tension-building jokes, live countdown, and funny result day surprises for Pakistani students!">
+    <meta name="keywords" content="1st year result, pakistani jokes, bise lahore result, fbise result, result day panic, funny student jokes">
+    <meta name="theme-color" content="#f8fafc">
+    <!-- Google Fonts: Outfit (Display & Numbers) + Plus Jakarta Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating pastel mesh gradient orbs for glassmorphism backdrop -->
+    <div class="mesh-backdrop">
+        <div class="glass-orb glass-orb-1"></div>
+        <div class="glass-orb glass-orb-2"></div>
+        <div class="glass-orb glass-orb-3"></div>
+        <div class="glass-orb glass-orb-4"></div>
+    </div>
+
+    <!-- Top Status Bar -->
+    <header class="top-bar">
+        <div class="tension-meter-pill">
+            <span class="pulsing-dot"></span>
+            <span>🫀 TENSION: <strong id="tensionLevel">99.9%</strong></span>
+        </div>
+        <button id="sfxToggleBtn" class="sfx-btn" aria-label="Toggle Sound Effects">
+            🔊 Sound ON
+        </button>
+    </header>
+
+    <!-- Main Glassmorphism Dashboard Layout -->
+    <main class="dashboard-container">
+        <!-- Top Horizontal Hero Section -->
+        <section class="glass-card hero-card-horizontal" aria-label="Countdown & Alerts">
+            <div class="hero-split-grid">
+                <!-- Left Info Column -->
+                <div class="hero-info-block">
+                    <span class="tag">🚨 RESULT ALERT 🚨</span>
+                    <h1 class="hero-title">1st Year Result 😱</h1>
+                    <p class="subtitle">
+                        Dil Tham Kar Betho Mere Dosto! 😂<br>
+                        Zindagi Ka Sab Se Bara Imtihan...
+                    </p>
+                    <div class="target-badge">
+                        🗓️ Result Day: 22 October 2026 — Subah 10:00 AM PKT
+                    </div>
+                </div>
+
+                <!-- Right Countdown & Actions Column -->
+                <div class="hero-countdown-block">
+                    <div class="countdown-header-row">
+                        <span class="emoji" id="face" title="Click to test your heartbeat!" role="button" tabindex="0">😰</span>
+                        <div class="countdown-title-wrap">
+                            <h2 class="countdown-heading">Countdown Shuru!</h2>
+                            <small class="emoji-caption">Click face to release tension!</small>
+                        </div>
+                    </div>
+
+                    <!-- Countdown Timer 4-Grid -->
+                    <div class="countdown">
+                        <div class="time"><span id="days">00</span><small>DAYS</small></div>
+                        <div class="time"><span id="hours">00</span><small>HOURS</small></div>
+                        <div class="time"><span id="minutes">00</span><small>MINUTES</small></div>
+                        <div class="time"><span id="seconds">00</span><small>SECONDS</small></div>
+                    </div>
+
+                    <!-- Primary Action Buttons Area -->
+                    <div class="actions-bar horizontal-actions">
+                        <!-- Dedicated Surprise Button -->
+                        <button id="dedicatedSurpriseBtn" class="btn-surprise-glow" type="button">
+                            😂 Result Day Surprise
+                        </button>
+                        <!-- Existing Primary Button -->
+                        <button id="tensionKamKaroBtn" class="primary" type="button">
+                            😂 Tension Kam Karo
+                        </button>
+                        <!-- Existing Secondary Button -->
+                        <button id="surpriseDekhoBtn" class="secondary" type="button">
+                            😈 Surprise Dekho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pakistani Joke Vault & Suspense Center (Below Hero) -->
+        <section class="glass-card joke-vault-card" aria-label="100+ Pakistani Student Jokes">
+            <div class="vault-header">
+                <div>
+                    <span class="vault-badge">LAUGHTER THERAPY</span>
+                    <h2 class="vault-heading">😂 Result Se Pehle Ki Halat</h2>
+                </div>
+                <div class="joke-meta-tags">
+                    <span id="jokeTag" class="joke-category-tag">🩴 Ammi & Abu</span>
+                    <span id="jokeCounter" class="joke-counter-tag">#1 / 122</span>
+                </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="category-filter-wrap">
+                <div class="category-pills">
+                    <button class="category-pill active" data-category="All">🌟 All (120+)</button>
+                    <button class="category-pill" data-category="Ammi & Abu">🩴 Ammi & Abu</button>
+                    <button class="category-pill" data-category="Rishtedaar">📞 Rishtedaar</button>
+                    <button class="category-pill" data-category="Friends & Toppers">🤣 Friends & Toppers</button>
+                    <button class="category-pill" data-category="Panic & Suspense">💓 Panic & Suspense</button>
+                    <button class="category-pill" data-category="Marks & Supply">🧮 Marks & Supply</button>
+                    <button class="category-pill" data-category="Duas & Promises">🤲 Duas & Promises</button>
+                    <button class="category-pill" data-category="Teachers & Board">🏫 Teachers & Board</button>
+                    <button class="category-pill" data-category="Suspense Alerts">🚨 Suspense Alerts</button>
+                </div>
+            </div>
+
+            <!-- Prominent Frosted Joke Card -->
+            <div class="joke-display-box">
+                <div class="quote-icon">“</div>
+                <p id="joke">Ammi keh rahi hain: Beta chai pee lo! ☕😂</p>
+            </div>
+
+            <!-- Joke Controls Toolbar -->
+            <div class="joke-toolbar">
+                <button class="btn-tool btn-tool-next" onclick="showNextJoke()" type="button">
+                    🎲 Agla Joke
+                </button>
+                <button class="btn-tool btn-tool-copy" onclick="copyCurrentJoke()" type="button">
+                    📋 Copy Joke
+                </button>
+                <button class="btn-tool btn-tool-scary" onclick="surpriseEngine.triggerDramaticSurprise()" type="button">
+                    ⚡ Scary Surprise!
+                </button>
+            </div>
+
+            <!-- Student Survival Checklist / Tension Stats -->
+            <div class="student-survival-grid">
+                <div class="survival-item">
+                    <span class="survival-icon">☕</span>
+                    <div class="survival-info">
+                        <strong>Chai Therapy</strong>
+                        <small>Recommended: 4 cups/day</small>
+                    </div>
+                </div>
+                <div class="survival-item">
+                    <span class="survival-icon">✈️</span>
+                    <div class="survival-info">
+                        <strong>Airplane Mode</strong>
+                        <small>Phuppo Defense active</small>
+                    </div>
+                </div>
+                <div class="survival-item">
+                    <span class="survival-icon">🩴</span>
+                    <div class="survival-info">
+                        <strong>Ammi Radar</strong>
+                        <small>Safe distance: 10 meters</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Existing Surprise Box Section -->
+            <div id="surprise" class="surprise-reveal-box">
+                <div class="result-box">
+                    <h3>😱 O BHAI SAHAB!</h3>
+                    <p id="surpriseText">
+                        Result kholne se pehle apna roll number yaad kar lo! 🤣
+                    </p>
+                    <p class="dua-text">📚 Allah sab Pakistani students ko kamyab kare! ❤️🤲</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        Made with ❤️ for 1st Year Pakistani Students<br>
+        Note: Yeh fun aur tension door karne ke liye comedy website hai, official board result portal nahi.<br>
+        Allah sab ko 90%+ marks se pass karwaye! 🤲
+    </footer>
+
+    <!-- Scripts -->
+    <script src="jokes.js"></script>
+    <script src="surprise.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
